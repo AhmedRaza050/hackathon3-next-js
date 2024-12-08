@@ -1,65 +1,11 @@
-// import Image from "next/image";
-// import { CiSearch } from "react-icons/ci";
-// import { FaSearch, FaSlidersH, FaHeart, FaBell, FaCog } from "react-icons/fa";
-
-// export default function Navbar() {
-//   return (
-//     <div className="max-w-[1440px] h-[124px] flex items-center justify-between px-4 py-2 border-[1px] border-[#C3D4E9] bg-white">
-//       {/* Left: Logo */}
-//       <div className="text-blue-500 font-bold text-xl  ml-10">
-//         <h1 className="font-bold text-[32px] leading-10 tracking-tight text-[#3563E9]">MORENT</h1>
-//       </div>
-
-//       {/* Center: Search Bar */}
-//       <div className="flex items-center w-[492px] h-11 mr-20 border-[1px] border-[#C3D4E9]  rounded-[70px]  px-4">
-//       <CiSearch  className="w-6 h-6 text-[#596780]" />
-//         <input
-//           type="text"
-//           placeholder="Search something here"
-//           className="flex-grow px-2 py-1 outline-none text-gray-700"
-//         />
-//         <FaSlidersH className="text-gray-500" />
-//       </div>
-
-//       {/* Right: Icons */}
-//       <div className="flex items-center space-x-4">
-//         <div className="w-11 h-11 rounded-full border-[1px] border-[#C3D4E9] border-opacity-[80%] px-[10px]  py-[10px]">
-//         <FaHeart className="text-gray-600 w-6 h-6  hover:text-blue-500 cursor-pointer" />
-
-//         </div>
-        
-//         <div className="w-11 h-11 rounded-full border-[1px] border-[#C3D4E9] border-opacity-[80%] px-[10px]  py-[10px]">
-//         <FaBell className="text-gray-600 w-6 h-6  hover:text-blue-500 cursor-pointer relative">
-
-       
-//           {/* Notification Dot */}
-//           <span className="  top-[2px] left-[95px] bg-[#FF4423] w-[11px] h-[11px] rounded-full"></span>
-//         </FaBell>
-//         </div>
-//         <div className="w-11 h-11 rounded-full border-[1px] border-[#C3D4E9] border-opacity-[80%] px-[10px]  py-[10px]">
-//         <FaCog className="text-gray-600 w-6 h-6  hover:text-blue-500 cursor-pointer" />
-//         </div>
-//         {/* Profile Picture */}
-//         <div className="w-11 h-11 bg-gray-200 rounded-full overflow-hidden">
-//           <Image
-//             src="/profile.png"
-//             alt="Profile"
-//             width={100}
-//             height={100}
-//             className="w-11 h-11 object-cover"
-//           />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 
 
 
 
 import Image from "next/image";
+import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
-import { FaSearch, FaSlidersH, FaHeart, FaBell, FaCog } from "react-icons/fa";
+import {  FaSlidersH, FaHeart, FaBell, FaCog } from "react-icons/fa";
 
 export default function Navbar() {
   return (
@@ -110,7 +56,7 @@ export default function Navbar() {
         </div>
 
         {/* Profile Picture on Large Screens */}
-        <div className="hidden sm:block w-11 h-11 bg-gray-200 rounded-full overflow-hidden">
+         <Link href="/dashboard"><div className="hidden sm:block w-11 h-11 bg-gray-200 rounded-full overflow-hidden">
           <Image
             src="/profile.png"
             alt="Profile"
@@ -119,6 +65,7 @@ export default function Navbar() {
             className="w-11 h-11 object-cover"
           />
         </div>
+        </Link>
       </div>
     </div>
   );

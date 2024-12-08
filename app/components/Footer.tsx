@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -59,12 +60,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between text-sm">
           <p className=" text-base  text-[#131313] font-medium tracking-tight">©2022 MORENT. All rights reserved</p>
           <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="#" className="hover:underline text-base  text-[#131313] font-medium tracking-tight">
+            <Link href="#" className="hover:underline text-base  text-[#131313] font-medium tracking-tight">
               Privacy & Policy
-            </a>
-            <a href="#" className="hover:underline text-base  text-[#131313] font-medium tracking-tight">
+            </Link>
+            <Link href="#" className="hover:underline text-base  text-[#131313] font-medium tracking-tight">
               Terms & Condition
-            </a>
+            </Link>
           </div>
         </div>
       </div>

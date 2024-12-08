@@ -2,6 +2,7 @@
 
 import { FaHeart, FaRegHeart, FaCar, FaUser, FaGasPump } from "react-icons/fa";
 import { useState } from "react";
+import Image from "next/image";
 
 interface Car {
   name: string;
@@ -96,7 +97,9 @@ const RecentRecomend = () => {
           </div>
         
           {/* Car Image */}
-          <img
+          <Image
+            height={200}
+            width={200}
             alt={car.name}
             src={car.image}
             className="w-full h-36 object-contain mb-4"

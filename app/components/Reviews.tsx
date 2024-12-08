@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { FaChevronDown } from "react-icons/fa";
@@ -15,9 +16,11 @@ const Reviews = () => {
       <div className="space-y-8 ">
         {/* Review 1 */}
         <div className="flex items-start">
-          <img
+          <Image
             src="/review1.png"
             alt="Alex Stanton"
+            height={200}
+            width={200}
             className="w-12 h-12 rounded-full object-cover"
           />
           <div className="ml-4 flex-1">
@@ -47,9 +50,11 @@ const Reviews = () => {
 
         {/* Review 2 */}
         <div className="flex items-start">
-          <img
+          <Image
             src="/review2.png"
             alt="Skylar Dias"
+            height={200}
+            width={200}
             className="w-12 h-12 rounded-full object-cover"
           />
           <div className="ml-4 flex-1">

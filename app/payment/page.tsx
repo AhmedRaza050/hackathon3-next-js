@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { CiStar } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
-import { MdOutlineSecurity } from "react-icons/md";
+
 
 const RentalForm = () => {
   return (
@@ -277,7 +277,8 @@ const RentalForm = () => {
           Prices may change depending on the length of the rental and the price of your rental car.
         </p>
         <div className="flex items-center space-x-4">
-          <img
+          <Image height={100}
+          width={100}
             src="/Look.png"
             alt="Car"
             className="w-[132px] h-[108px] rounded-lg object-cover"

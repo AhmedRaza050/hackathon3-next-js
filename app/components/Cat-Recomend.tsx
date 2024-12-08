@@ -4,6 +4,7 @@ import { FaHeart, FaRegHeart, FaCar, FaUser, FaGasPump } from "react-icons/fa";
 import { useState } from "react";
 import PickDrop from "./PickDrop";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Car {
   name: string;
@@ -120,9 +121,11 @@ const Cat_Recomendation = () => {
            <p className="text-gray-500 text-sm">{car.type}</p>
          </div>
          {/* Car Image */}
-         <img
+         <Image
            alt={`${car.name} car`}
            src={car.image}
+           height={200}
+           width={200}
            className="w-full h-36 object-contain mb-4"
          />
          {/* Car Details */}
