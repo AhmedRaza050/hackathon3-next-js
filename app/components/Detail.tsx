@@ -1,5 +1,5 @@
 import { AiFillHeart } from "react-icons/ai";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+
 import Image from 'next/image'
 import React from 'react'
 import { CiStar } from "react-icons/ci";
@@ -66,7 +66,7 @@ const Detail = () => {
 
       {/* Description */}
       <p className="text-[#596780] font-normal p-5 text-xl mt-4">
-        NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
+        NISMO has become the embodiment of Nissan outstanding performance, inspired by the most unforgiving proving ground, the race track.
       </p>
 
       {/* Features */}

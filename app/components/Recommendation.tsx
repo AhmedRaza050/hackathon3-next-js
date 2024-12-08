@@ -3,6 +3,7 @@
 import { FaHeart, FaRegHeart, FaCar, FaUser, FaGasPump } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Car {
   name: string;
@@ -141,7 +142,8 @@ const Recomendation = () => {
               <p className="text-gray-500 text-sm">{car.type}</p>
             </div>
 
-            <img
+            <Image height={100}
+            width={100} 
               alt={car.name}
               src={car.image}
               className="w-full h-36 object-contain mb-4"

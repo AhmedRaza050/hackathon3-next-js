@@ -97,7 +97,8 @@ const RecentCar = () => {
           </div>
         
           {/* Car Image */}
-          <Image            alt={car.name}
+          <Image            
+          alt={car.name}
             src={car.image}
             height={200}
             width={200}

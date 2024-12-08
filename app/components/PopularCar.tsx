@@ -2,6 +2,7 @@
 
 import { FaHeart, FaRegHeart, FaCar, FaUser, FaGasPump } from "react-icons/fa";
 import { useState } from "react";
+import Image from "next/image";
 
 interface Car {
   name: string;
@@ -106,9 +107,11 @@ const PopularCar = () => {
           </div>
         
           {/* Car Image */}
-          <img
+          <Image
             alt={car.name}
             src={car.image}
+            height={100}
+            width={100}
             className="w-full h-36 object-contain mb-4"
           />
         
