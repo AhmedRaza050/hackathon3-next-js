@@ -183,10 +183,10 @@ const Recomendation = () => {
         ))}
       </div>
       
-      <div className=" flex justify-between items-center w-[734px] h-11  ml-[488px] mt-5">
+      <div className=" flex justify-between items-center w-full h-11 px-8 align-center mt-5">
 
       <Link href="/category"><button className="bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded w-[156px] h-11">Show more Car</button></Link>
-      <div  className="font-medium text-sm text-[#90A3BF]  px-1">120 Cars</div>
+      <div  className="font-medium text-sm text-[#90A3BF]  ml-4 ">120 Cars</div>
       </div>
       
     </div>

@@ -5,9 +5,9 @@ import { FaChevronDown } from "react-icons/fa";
 
 const Reviews = () => {
   return (
-    <div className="w-[1016px] h-[452px] py-10 px-10 bg-white rounded-lg">
+    <div className="max-w-5xl mx-auto py-10 px-10 bg-white ">
       {/* Reviews Header */}
-      <div className="flex justify-between  w-[136px] h-[28px] items-center mb-6">
+      <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-bold">Reviews</h2>
         <span className="bg-blue-500 text-white text-sm px-3 py-1 rounded-full">13</span>
       </div>
@@ -15,22 +15,22 @@ const Reviews = () => {
       {/* Review List */}
       <div className="space-y-8 ">
         {/* Review 1 */}
-        <div className="flex items-start">
+        <div className="flex flex-col sm:flex-row items-start gap-4">
           <Image
             src="/review1.png"
             alt="Alex Stanton"
-            height={200}
-            width={200}
-            className="w-12 h-12 rounded-full object-cover"
+            height={48}
+            width={48}
+            className=" rounded-full object-cover"
           />
-          <div className="ml-4 flex-1">
-            <div className="flex justify-between items-center ">
+          <div className=" flex-1">
+            <div className="flex justify-between items-center gap-4 ">
               <div>
                 <h3 className="text-base tricking-tight font-bold">Alex Stanton</h3>
                 <p  className="text-sm font-medium text-[#90A3BF]">CEO at Bukalapak</p>
               </div>
-              <div className="text-right">
-                <p className="text-sm text-gray-400">21 July 2022</p>
+              <div className="text-sm text-gray-400 text-right">
+                <p className="">21 July 2022</p>
                 <div className="flex text-[#FBAD39] mt-1">
                   <AiFillStar />
                   <AiFillStar />
@@ -49,22 +49,22 @@ const Reviews = () => {
         </div>
 
         {/* Review 2 */}
-        <div className="flex items-start">
+        <div className="flex flex-col sm:flex-row items-start gap-4">
           <Image
             src="/review2.png"
             alt="Skylar Dias"
-            height={200}
-            width={200}
-            className="w-12 h-12 rounded-full object-cover"
+            height={48}
+            width={48}
+            className="rounded-full object-cover"
           />
-          <div className="ml-4 flex-1">
-            <div className="flex justify-between items-center">
+          <div className=" flex-1">
+            <div className="flex gap-4 justify-between items-center">
               <div>
                 <h3 className="text-base tricking-tight font-bold">Skylar Dias</h3>
                 <p className="text-sm font-medium text-[#90A3BF]">CEO at Amazon</p>
               </div>
-              <div className="text-right">
-                <p className="text-sm font-medium text-[#90A3BF]">20 July 2022</p>
+              <div className="text-sm text-[#90A3BF]text-right">
+                <p className=" font-medium">20 July 2022</p>
                 <div className="flex text-[#FBAD39] mt-1">
                   <AiFillStar />
                   <AiFillStar />

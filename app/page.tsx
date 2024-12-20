@@ -6,7 +6,7 @@ import Recomendation from './components/Recommendation';
 
 const Home = () => {
   return (
-    <div className='max-w-[1440px] max-h-[2120px] bg-[#F6F7F9] top-[124px]'>
+    <div className='max-w-[1440px]  bg-[#F6F7F9] top-[124px]'>
        <HeroSection />
        <PickDrop />
        <PopularCar />

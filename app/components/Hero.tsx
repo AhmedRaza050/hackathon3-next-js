@@ -23,11 +23,11 @@ const HeroSection = () => {
         </div>
         <div className="absolute bottom-4 left-4">
           <Image
-            src="/hero1.png"
+            src="/popular-1.png"
             alt="Car 2"
             height={480}
             width={540}
-            className="object-contain"
+            className=" lg:w-[340px] lg:ml-28  sm:w-[220px] sm:h-[75px] lg:h-[108px] object-contain"
           />
         </div>
       </div>
@@ -53,7 +53,7 @@ const HeroSection = () => {
             alt="Car 2"
             height={480}
             width={540}
-            className="w-[340px] h-[108px] ml-24 object-contain"
+            className="lg:w-[340px] lg:h-[108px] lg:ml-32 sm:w-[220px] sm:h-[75px] object-contain"
           />
         </div>
       </div>
