@@ -1,6 +1,6 @@
 import React from "react";
-import SlideBar from "../components/Slidebar";
-import Cat_Recomendation from "../components/Cat-Recomend";
+import SlideBar from "../../components/Slidebar";
+import Cat_Recomendation from "../../components/Cat-Recomend";
 
 const Category = () => {
   return (

@@ -213,7 +213,7 @@ const RentalForm = () => {
                   </label>
                 ))}
               </div>
-            <Link  href="/dashboard">  <button className="w-[140px] p-3 mt-4 bg-blue-500 text-white rounded-md">
+            <Link  href="/checkout">  <button className="w-[140px] p-3 mt-4 bg-blue-500 text-white rounded-md">
                 Rent Now
               </button></Link>
             </section>

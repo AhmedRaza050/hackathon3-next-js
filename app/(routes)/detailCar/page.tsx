@@ -10,12 +10,7 @@
 //   return (
 //     <div className =" max-w-[1440px]  bg-[#F9F9F9] flex gap-8 justify-evenly ">
 //       <div className='max-w-[360px] max-h-[1600px] '>
-//         <SlideBar />
-//       </div>
-//       <div className='max-w-[1015px] py-10'>
-//         < Detail/>
-//         <div className='py-10'>
-       
+//         <SlideBar />y
 //           <Reviews />
 //         </div>
 //         <div >
@@ -39,7 +34,7 @@ import RecentRecomend from '@/app/components/RecentRecomend'
 import Reviews from '@/app/components/Reviews';
 import SlideBar from '@/app/components/Slidebar';
 import React from 'react';
-import Detail from '../components/Detail'; 
+import Detail from '@/app/components/Detail'; 
 
 const DetailCarRent = () => {
   return (

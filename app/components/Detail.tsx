@@ -108,6 +108,8 @@
 // }
 
 // export default Detail
+
+
 import { AiFillHeart } from "react-icons/ai";
 import Image from 'next/image';
 import React from 'react';
